@@ -2,6 +2,7 @@ var hueIP;
 
 function getHueIP(DOMcallback) {
     $.ajax({
+        cache: false,
         type: 'GET',
         Origin: 'http://sttwss.com',
         url: 'https://www.meethue.com/api/nupnp',
@@ -31,6 +32,7 @@ function colorloop() {
     };
 
     $.ajax({
+        cache: false,
         type: "PUT",
         Origin: 'http://sttwss.com',
         contentType: "application/json; charset=utf-8",
@@ -59,6 +61,7 @@ function lightsOff() {
     };
 
     $.ajax({
+        cache: false,
         type: "PUT",
         Origin: 'http://sttwss.com',
         contentType: "application/json; charset=utf-8",
@@ -87,6 +90,7 @@ function lightsOn() {
     };
 
     $.ajax({
+        cache: false,
         type: "PUT",
         Origin: 'http://sttwss.com',
         contentType: "application/json; charset=utf-8",
@@ -114,6 +118,7 @@ function lightsOn() {
 function getGroups(DOMcallback) {
 
     $.ajax({
+        cache: false,
         type: 'GET',
         Origin: 'http://sttwss.com',
         url: '//10.0.0.40/api/scottweiss/groups/0',
@@ -145,6 +150,7 @@ function blue() {
     };
 
     $.ajax({
+        cache: false,
         type: "PUT",
         Origin: 'http://sttwss.com',
         contentType: "application/json; charset=utf-8",
