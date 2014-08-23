@@ -1,1 +1,2 @@
-<access uri="*" subdomains="true" />
+
+<access origin="*" />
