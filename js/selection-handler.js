@@ -10,6 +10,7 @@ $(document).ready(function(){
 $('#lights-on').on('click', function(){
 	lightsOn();
 	getGroups(checkLightStatus);
+	$('body').append("this switch has been hit");
 });
 
 $('#lights-off').on('click', function(){

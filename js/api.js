@@ -1,7 +1,6 @@
 var hueIP;
 
 function getHueIP(DOMcallback) {
-
     $.ajax({
         type: 'GET',
         url: 'https://www.meethue.com/api/nupnp',
@@ -39,13 +38,13 @@ function colorloop() {
         success: function(data) {
             var list = data === null ? [] : (data instanceof Array ? data  : [data]);
 
-            console.group('getHueIP');
+            console.group('colorloop');
                 console.log(list);
             console.groupEnd();
        
             // DOMcallback(list);
         }, error: function() {
-            console.log('error on getHueIP');
+            console.log('error on colorloop');
         }
     });
 }
@@ -66,13 +65,13 @@ function lightsOff() {
         success: function(data) {
             var list = data === null ? [] : (data instanceof Array ? data  : [data]);
 
-            console.group('getHueIP');
+            console.group('lightsOff');
                 console.log(list);
             console.groupEnd();
        
             // DOMcallback(list);
         }, error: function() {
-            console.log('error on getHueIP');
+            console.log('error on lightsOff');
         }
     });
 }
@@ -81,7 +80,6 @@ function lightsOn() {
     var DataToSend = new Object();
     DataToSend = {
         "on":true,
-        
         "effect": "none"
     };
 
@@ -94,13 +92,13 @@ function lightsOn() {
         success: function(data) {
             var list = data === null ? [] : (data instanceof Array ? data  : [data]);
 
-            console.group('getHueIP');
+            console.group('lightsOn');
                 console.log(list);
             console.groupEnd();
        
             // DOMcallback(list);
         }, error: function() {
-            console.log('error on getHueIP');
+            console.log('error on lightsOn');
         }
     });
 }
@@ -147,13 +145,13 @@ function blue() {
         success: function(data) {
             var list = data === null ? [] : (data instanceof Array ? data  : [data]);
 
-            console.group('getHueIP');
+            console.group('blue');
                 console.log(list);
             console.groupEnd();
        
             // DOMcallback(list);
         }, error: function() {
-            console.log('error on getHueIP');
+            console.log('error on blue');
         }
     });
 }
