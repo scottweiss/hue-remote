@@ -85,8 +85,10 @@ function lightsOn() {
 
     $.ajax({
         type: "PUT",
+        Origin: 'http://sttwss.com',
         contentType: "application/json; charset=utf-8",
         url: '//10.0.0.40/api/scottweiss/groups/0/action',
+
         data: JSON.stringify(DataToSend),
         dataType: "json",
         success: function(data) {
