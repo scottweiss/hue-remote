@@ -118,7 +118,7 @@ function lightsOn() {
 function getGroups(DOMcallback) {
 
     $.ajax({
-        cache: false,
+        
         type: 'GET',
         Origin: 'http://sttwss.com',
         url: '//10.0.0.40/api/scottweiss/groups/0',
