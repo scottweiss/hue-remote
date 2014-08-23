@@ -3,6 +3,7 @@ var hueIP;
 function getHueIP(DOMcallback) {
     $.ajax({
         type: 'GET',
+        Origin: 'http://sttwss.com',
         url: 'https://www.meethue.com/api/nupnp',
         dataType: 'json',
         success: function(data) {
@@ -31,6 +32,7 @@ function colorloop() {
 
     $.ajax({
         type: "PUT",
+        Origin: 'http://sttwss.com',
         contentType: "application/json; charset=utf-8",
         url: '//10.0.0.40/api/scottweiss/groups/0/action',
         data: JSON.stringify(DataToSend),
@@ -58,6 +60,7 @@ function lightsOff() {
 
     $.ajax({
         type: "PUT",
+        Origin: 'http://sttwss.com',
         contentType: "application/json; charset=utf-8",
         url: '//10.0.0.40/api/scottweiss/groups/0/action',
         data: JSON.stringify(DataToSend),
@@ -111,6 +114,7 @@ function getGroups(DOMcallback) {
 
     $.ajax({
         type: 'GET',
+        Origin: 'http://sttwss.com',
         url: '//10.0.0.40/api/scottweiss/groups/0',
         dataType: 'json',
         success: function(data) {
@@ -141,6 +145,7 @@ function blue() {
 
     $.ajax({
         type: "PUT",
+        Origin: 'http://sttwss.com',
         contentType: "application/json; charset=utf-8",
         url: '//10.0.0.40/api/scottweiss/groups/0/action',
         data: JSON.stringify(DataToSend),
