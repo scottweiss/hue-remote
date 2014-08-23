@@ -1,2 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.example"
+    versionCode = "10" 
+    version     = "1.0.0" >
 
-<access origin="*" />
+    <!-- versionCode is optional and Android only -->
+
+    <name>PhoneGap Example</name>
+
+    <description>
+      An example for phonegap build docs. 
+    </description>
+
+    <author href="http://sttwss.com" email="scott.a.weiss@gmail.com">
+      Scott Weiss
+    </author>
+
+    <!--
+      This allows your app to load assets from all *.phongap.com domains
+    -->
+    <access origin="*" subdomains="true" />
+</widget>
