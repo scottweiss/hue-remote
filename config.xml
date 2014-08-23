@@ -21,4 +21,6 @@
       This allows your app to load assets from all *.phongap.com domains
     -->
     <access origin="*" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 </widget>
