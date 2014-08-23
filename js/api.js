@@ -95,10 +95,11 @@ function lightsOn() {
             console.group('lightsOn');
                 console.log(list);
             console.groupEnd();
-       
+       $('body').append("lightsOn was a success");
             // DOMcallback(list);
         }, error: function() {
             console.log('error on lightsOn');
+            $('body').append("lightsOn was a failure");
         }
     });
 }
